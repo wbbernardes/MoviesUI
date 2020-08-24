@@ -14,6 +14,9 @@
 		B14731F224F4317A009B232B /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = B14731F124F4317A009B232B /* FacebookLogin */; };
 		B14731F424F437EE009B232B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14731F324F437EE009B232B /* User.swift */; };
 		B14731F624F43807009B232B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14731F524F43807009B232B /* UserManager.swift */; };
+		B14731F924F43E95009B232B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B14731F824F43E95009B232B /* Lottie */; };
+		B14731FB24F43EA1009B232B /* 33-video-cam.json in Resources */ = {isa = PBXBuildFile; fileRef = B14731FA24F43EA1009B232B /* 33-video-cam.json */; };
+		B14731FD24F4447B009B232B /* LaunchLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14731FC24F4447B009B232B /* LaunchLottieView.swift */; };
 		B1B500CB24F3FE880068420E /* MoviesUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B500CA24F3FE880068420E /* MoviesUIApp.swift */; };
 		B1B500CD24F3FE880068420E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B500CC24F3FE880068420E /* ContentView.swift */; };
 		B1B500CF24F3FE8B0068420E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B500CE24F3FE8B0068420E /* Assets.xcassets */; };
@@ -51,6 +54,8 @@
 		B14731EE24F40FC0009B232B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B14731F324F437EE009B232B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B14731F524F43807009B232B /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		B14731FA24F43EA1009B232B /* 33-video-cam.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "33-video-cam.json"; sourceTree = "<group>"; };
+		B14731FC24F4447B009B232B /* LaunchLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchLottieView.swift; sourceTree = "<group>"; };
 		B1B500C724F3FE880068420E /* MoviesUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B500CA24F3FE880068420E /* MoviesUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUIApp.swift; sourceTree = "<group>"; };
 		B1B500CC24F3FE880068420E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 			files = (
 				B14731F224F4317A009B232B /* FacebookLogin in Frameworks */,
 				A17ECE0A4B7C9079715F8596 /* Pods_MoviesUI.framework in Frameworks */,
+				B14731F924F43E95009B232B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +221,7 @@
 		B1B500FC24F405280068420E /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				B14731FA24F43EA1009B232B /* 33-video-cam.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -238,6 +245,7 @@
 		B1B500FF24F405650068420E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B14731FC24F4447B009B232B /* LaunchLottieView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 			name = MoviesUI;
 			packageProductDependencies = (
 				B14731F124F4317A009B232B /* FacebookLogin */,
+				B14731F824F43E95009B232B /* Lottie */,
 			);
 			productName = MoviesUI;
 			productReference = B1B500C724F3FE880068420E /* MoviesUI.app */;
@@ -395,6 +404,7 @@
 			mainGroup = B1B500BE24F3FE880068420E;
 			packageReferences = (
 				B14731F024F4317A009B232B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				B14731F724F43E95009B232B /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = B1B500C824F3FE880068420E /* Products */;
 			projectDirPath = "";
@@ -413,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B500D224F3FE8B0068420E /* Preview Assets.xcassets in Resources */,
+				B14731FB24F43EA1009B232B /* 33-video-cam.json in Resources */,
 				B1B500CF24F3FE8B0068420E /* Assets.xcassets in Resources */,
 				B14731EF24F40FC0009B232B /* GoogleService-Info.plist in Resources */,
 			);
@@ -576,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14731FD24F4447B009B232B /* LaunchLottieView.swift in Sources */,
 				B14731F424F437EE009B232B /* User.swift in Sources */,
 				B1B500F924F403F60068420E /* Colors+Extension.swift in Sources */,
 				B1B500CD24F3FE880068420E /* ContentView.swift in Sources */,
@@ -910,6 +922,14 @@
 				minimumVersion = 7.1.1;
 			};
 		};
+		B14731F724F43E95009B232B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -917,6 +937,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B14731F024F4317A009B232B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
+		};
+		B14731F824F43E95009B232B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B14731F724F43E95009B232B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

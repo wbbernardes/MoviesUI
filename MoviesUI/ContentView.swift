@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isActive = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                NavigationLink(
+                    destination: Text("Destination").navigationBarBackButtonHidden(true),
+                    isActive: $isActive) {
+                    LaunchLottieView(filename: "33-video-cam") { _ in
+                        isActive = true
+                    }.frame(width: 200, height: 200, alignment: .center)
+                }
+            }
+        }.navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 
